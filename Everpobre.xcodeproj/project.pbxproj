@@ -13,6 +13,13 @@
 		B8DA9C8F1AD4795000F13472 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8DA9C8D1AD4795000F13472 /* LaunchScreen.xib */; };
 		B8DA9C9B1AD4795000F13472 /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9C9A1AD4795000F13472 /* EverpobreTests.m */; };
 		B8DA9CA61AD47AA900F13472 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CA41AD47AA900F13472 /* Model.xcdatamodeld */; };
+		B8DA9CAA1AD486AC00F13472 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CA91AD486AC00F13472 /* AGTCoreDataStack.m */; };
+		B8DA9CC21AD492CF00F13472 /* JBNote.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CB61AD492CF00F13472 /* JBNote.m */; };
+		B8DA9CC31AD492CF00F13472 /* JBNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CB81AD492CF00F13472 /* JBNotebook.m */; };
+		B8DA9CC41AD492CF00F13472 /* JBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CBA1AD492CF00F13472 /* JBPhoto.m */; };
+		B8DA9CC51AD492CF00F13472 /* _JBNote.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CBD1AD492CF00F13472 /* _JBNote.m */; };
+		B8DA9CC61AD492CF00F13472 /* _JBNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CBF1AD492CF00F13472 /* _JBNotebook.m */; };
+		B8DA9CC71AD492CF00F13472 /* _JBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DA9CC11AD492CF00F13472 /* _JBPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,20 @@
 		B8DA9C991AD4795000F13472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DA9C9A1AD4795000F13472 /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
 		B8DA9CA51AD47AA900F13472 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B8DA9CA81AD486AC00F13472 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		B8DA9CA91AD486AC00F13472 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		B8DA9CB51AD492CF00F13472 /* JBNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBNote.h; sourceTree = "<group>"; };
+		B8DA9CB61AD492CF00F13472 /* JBNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBNote.m; sourceTree = "<group>"; };
+		B8DA9CB71AD492CF00F13472 /* JBNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBNotebook.h; sourceTree = "<group>"; };
+		B8DA9CB81AD492CF00F13472 /* JBNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBNotebook.m; sourceTree = "<group>"; };
+		B8DA9CB91AD492CF00F13472 /* JBPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBPhoto.h; sourceTree = "<group>"; };
+		B8DA9CBA1AD492CF00F13472 /* JBPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBPhoto.m; sourceTree = "<group>"; };
+		B8DA9CBC1AD492CF00F13472 /* _JBNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JBNote.h; sourceTree = "<group>"; };
+		B8DA9CBD1AD492CF00F13472 /* _JBNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JBNote.m; sourceTree = "<group>"; };
+		B8DA9CBE1AD492CF00F13472 /* _JBNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JBNotebook.h; sourceTree = "<group>"; };
+		B8DA9CBF1AD492CF00F13472 /* _JBNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JBNotebook.m; sourceTree = "<group>"; };
+		B8DA9CC01AD492CF00F13472 /* _JBPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JBPhoto.h; sourceTree = "<group>"; };
+		B8DA9CC11AD492CF00F13472 /* _JBPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JBPhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +138,39 @@
 		B8DA9CA71AD47ABB00F13472 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B8DA9CB41AD492CF00F13472 /* Human */,
+				B8DA9CBB1AD492CF00F13472 /* Machine */,
+				B8DA9CA81AD486AC00F13472 /* AGTCoreDataStack.h */,
+				B8DA9CA91AD486AC00F13472 /* AGTCoreDataStack.m */,
 				B8DA9CA41AD47AA900F13472 /* Model.xcdatamodeld */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B8DA9CB41AD492CF00F13472 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				B8DA9CB51AD492CF00F13472 /* JBNote.h */,
+				B8DA9CB61AD492CF00F13472 /* JBNote.m */,
+				B8DA9CB71AD492CF00F13472 /* JBNotebook.h */,
+				B8DA9CB81AD492CF00F13472 /* JBNotebook.m */,
+				B8DA9CB91AD492CF00F13472 /* JBPhoto.h */,
+				B8DA9CBA1AD492CF00F13472 /* JBPhoto.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		B8DA9CBB1AD492CF00F13472 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				B8DA9CBC1AD492CF00F13472 /* _JBNote.h */,
+				B8DA9CBD1AD492CF00F13472 /* _JBNote.m */,
+				B8DA9CBE1AD492CF00F13472 /* _JBNotebook.h */,
+				B8DA9CBF1AD492CF00F13472 /* _JBNotebook.m */,
+				B8DA9CC01AD492CF00F13472 /* _JBPhoto.h */,
+				B8DA9CC11AD492CF00F13472 /* _JBPhoto.m */,
+			);
+			path = Machine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,8 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DA9CC21AD492CF00F13472 /* JBNote.m in Sources */,
+				B8DA9CC41AD492CF00F13472 /* JBPhoto.m in Sources */,
+				B8DA9CC61AD492CF00F13472 /* _JBNotebook.m in Sources */,
 				B8DA9C841AD4795000F13472 /* AppDelegate.m in Sources */,
+				B8DA9CC71AD492CF00F13472 /* _JBPhoto.m in Sources */,
 				B8DA9C811AD4795000F13472 /* main.m in Sources */,
+				B8DA9CAA1AD486AC00F13472 /* AGTCoreDataStack.m in Sources */,
+				B8DA9CC51AD492CF00F13472 /* _JBNote.m in Sources */,
+				B8DA9CC31AD492CF00F13472 /* JBNotebook.m in Sources */,
 				B8DA9CA61AD47AA900F13472 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
