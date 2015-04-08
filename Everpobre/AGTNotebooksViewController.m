@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
     self.title = @"Everpobre";
+    [self addNewNotebookButton];
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -34,5 +36,37 @@
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)nb.notes.count];
     return cell;
 }
+
+
+#pragma mark - Utils
+- (void)addNewNotebookButton
+{
+    UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                         target:self
+                                                                         action:@selector(addNewNoteBook:)];
+    self.navigationItem.rightBarButtonItem = add;
+}
+
+#pragma mark - Actions
+- (void)addNewNoteBook:(id)sender
+{
+    [AGTNotebook notebookWithName:@"Nueva libreta" context:self.fetchedResultsController.managedObjectContext];
+}
+
+#pragma mark - UITableViewDelegate
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        AGTNotebook *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        [self.fetchedResultsController.managedObjectContext deleteObject:nb];
+    }
+}
+
+
 
 @end
