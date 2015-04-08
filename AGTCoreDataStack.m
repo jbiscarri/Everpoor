@@ -177,8 +177,7 @@
         if (![self.context save:&err]) {
             if (errorBlock != nil) {
                 errorBlock(err);
-            }
-            
+            }            
         }
     }
     

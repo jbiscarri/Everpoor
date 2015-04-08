@@ -62,20 +62,42 @@
 
 -(void) createDummyData{
     
+    AGTNotebook *exs = [AGTNotebook notebookWithName:@"Libreta1" context:self.stack.context];
     
-    AGTNotebook *exs = [AGTNotebook notebookWithName:@"Ex-novias para el recuerdo" context:self.stack.context];
+    [AGTNote noteWithName:@"Nota1"
+                 notebook:exs
+                  context:self.stack.context];
+    [AGTNote noteWithName:@"Nota2"
+                 notebook:exs
+                  context:self.stack.context];
+    [AGTNote noteWithName:@"Nota3"
+                 notebook:exs
+                  context:self.stack.context];
+    [AGTNote noteWithName:@"Nota4"
+                 notebook:exs
+                  context:self.stack.context];
+    AGTNote *n5 = [AGTNote noteWithName:@"Nota5"
+                 notebook:exs
+                  context:self.stack.context];
     
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[AGTNote entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.name
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.modificationDate
+                                                          ascending:NO]];
+    req.fetchBatchSize = 20;
+    //req.predicate = [NSPredicate predicateWithFormat:@"notebook = %@", exs];
     
-    AGTNote *n = [AGTNote noteWithName:@"Mariana Dávalos"
-                              notebook:exs
-                               context:self.stack.context];
-    
-    NSLog(@"libreta: %@", exs);
-    NSLog(@"nota: %@", n);
-    
-    n.text = @"Hermana gemela de Camila";
-    
-    
+    NSArray *results = [self.stack executeFetchRequest:req
+                                            errorBlock:^(NSError *error) {
+                                                NSLog(@"Error al buscar %@", error);
+                                            }];
+    [self.stack.context deleteObject:n5];
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Error al guardar %@", error);
+
+    }];
     
 }
 
