@@ -1,20 +1,20 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to JBPhoto.m instead.
+// Make changes to AGTPhoto.m instead.
 
-#import "_JBPhoto.h"
+#import "_AGTPhoto.h"
 
-const struct JBPhotoAttributes JBPhotoAttributes = {
+const struct AGTPhotoAttributes AGTPhotoAttributes = {
 	.photoData = @"photoData",
 };
 
-const struct JBPhotoRelationships JBPhotoRelationships = {
+const struct AGTPhotoRelationships AGTPhotoRelationships = {
 	.notes = @"notes",
 };
 
-@implementation JBPhotoID
+@implementation AGTPhotoID
 @end
 
-@implementation _JBPhoto
+@implementation _AGTPhoto
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
@@ -30,8 +30,8 @@ const struct JBPhotoRelationships JBPhotoRelationships = {
 	return [NSEntityDescription entityForName:@"Photo" inManagedObjectContext:moc_];
 }
 
-- (JBPhotoID*)objectID {
-	return (JBPhotoID*)[super objectID];
+- (AGTPhotoID*)objectID {
+	return (AGTPhotoID*)[super objectID];
 }
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {

@@ -1,22 +1,22 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to JBNotebook.m instead.
+// Make changes to AGTNotebook.m instead.
 
-#import "_JBNotebook.h"
+#import "_AGTNotebook.h"
 
-const struct JBNotebookAttributes JBNotebookAttributes = {
+const struct AGTNotebookAttributes AGTNotebookAttributes = {
 	.creationDate = @"creationDate",
 	.modificationDate = @"modificationDate",
 	.name = @"name",
 };
 
-const struct JBNotebookRelationships JBNotebookRelationships = {
+const struct AGTNotebookRelationships AGTNotebookRelationships = {
 	.notes = @"notes",
 };
 
-@implementation JBNotebookID
+@implementation AGTNotebookID
 @end
 
-@implementation _JBNotebook
+@implementation _AGTNotebook
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
@@ -32,8 +32,8 @@ const struct JBNotebookRelationships JBNotebookRelationships = {
 	return [NSEntityDescription entityForName:@"Notebook" inManagedObjectContext:moc_];
 }
 
-- (JBNotebookID*)objectID {
-	return (JBNotebookID*)[super objectID];
+- (AGTNotebookID*)objectID {
+	return (AGTNotebookID*)[super objectID];
 }
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {

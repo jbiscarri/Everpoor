@@ -1,31 +1,32 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to JBNote.h instead.
+// Make changes to AGTNote.h instead.
 
-#import <CoreData/CoreData.h>
+@import CoreData;
+#import "AGTEverpobreBaseClass.h"
 
-extern const struct JBNoteAttributes {
+extern const struct AGTNoteAttributes {
 	__unsafe_unretained NSString *creationDate;
 	__unsafe_unretained NSString *modificationDate;
 	__unsafe_unretained NSString *name;
 	__unsafe_unretained NSString *text;
-} JBNoteAttributes;
+} AGTNoteAttributes;
 
-extern const struct JBNoteRelationships {
+extern const struct AGTNoteRelationships {
 	__unsafe_unretained NSString *notebook;
 	__unsafe_unretained NSString *photo;
-} JBNoteRelationships;
+} AGTNoteRelationships;
 
-@class JBNotebook;
-@class JBPhoto;
+@class AGTNotebook;
+@class AGTPhoto;
 
-@interface JBNoteID : NSManagedObjectID {}
+@interface AGTNoteID : NSManagedObjectID {}
 @end
 
-@interface _JBNote : NSManagedObject {}
+@interface _AGTNote : AGTEverpobreBaseClass {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-@property (nonatomic, readonly, strong) JBNoteID* objectID;
+@property (nonatomic, readonly, strong) AGTNoteID* objectID;
 
 @property (nonatomic, strong) NSDate* creationDate;
 
@@ -43,17 +44,17 @@ extern const struct JBNoteRelationships {
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) JBNotebook *notebook;
+@property (nonatomic, strong) AGTNotebook *notebook;
 
 //- (BOOL)validateNotebook:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) JBPhoto *photo;
+@property (nonatomic, strong) AGTPhoto *photo;
 
 //- (BOOL)validatePhoto:(id*)value_ error:(NSError**)error_;
 
 @end
 
-@interface _JBNote (CoreDataGeneratedPrimitiveAccessors)
+@interface _AGTNote (CoreDataGeneratedPrimitiveAccessors)
 
 - (NSDate*)primitiveCreationDate;
 - (void)setPrimitiveCreationDate:(NSDate*)value;
@@ -67,10 +68,10 @@ extern const struct JBNoteRelationships {
 - (NSString*)primitiveText;
 - (void)setPrimitiveText:(NSString*)value;
 
-- (JBNotebook*)primitiveNotebook;
-- (void)setPrimitiveNotebook:(JBNotebook*)value;
+- (AGTNotebook*)primitiveNotebook;
+- (void)setPrimitiveNotebook:(AGTNotebook*)value;
 
-- (JBPhoto*)primitivePhoto;
-- (void)setPrimitivePhoto:(JBPhoto*)value;
+- (AGTPhoto*)primitivePhoto;
+- (void)setPrimitivePhoto:(AGTPhoto*)value;
 
 @end

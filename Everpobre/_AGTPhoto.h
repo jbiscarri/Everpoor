@@ -1,26 +1,27 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to JBPhoto.h instead.
+// Make changes to AGTPhoto.h instead.
 
-#import <CoreData/CoreData.h>
+@import CoreData;
+#import "AGTEverpobreBaseClass.h"
 
-extern const struct JBPhotoAttributes {
+extern const struct AGTPhotoAttributes {
 	__unsafe_unretained NSString *photoData;
-} JBPhotoAttributes;
+} AGTPhotoAttributes;
 
-extern const struct JBPhotoRelationships {
+extern const struct AGTPhotoRelationships {
 	__unsafe_unretained NSString *notes;
-} JBPhotoRelationships;
+} AGTPhotoRelationships;
 
-@class JBNote;
+@class AGTNote;
 
-@interface JBPhotoID : NSManagedObjectID {}
+@interface AGTPhotoID : NSManagedObjectID {}
 @end
 
-@interface _JBPhoto : NSManagedObject {}
+@interface _AGTPhoto : AGTEverpobreBaseClass {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-@property (nonatomic, readonly, strong) JBPhotoID* objectID;
+@property (nonatomic, readonly, strong) AGTPhotoID* objectID;
 
 @property (nonatomic, strong) NSData* photoData;
 
@@ -32,15 +33,15 @@ extern const struct JBPhotoRelationships {
 
 @end
 
-@interface _JBPhoto (NotesCoreDataGeneratedAccessors)
+@interface _AGTPhoto (NotesCoreDataGeneratedAccessors)
 - (void)addNotes:(NSSet*)value_;
 - (void)removeNotes:(NSSet*)value_;
-- (void)addNotesObject:(JBNote*)value_;
-- (void)removeNotesObject:(JBNote*)value_;
+- (void)addNotesObject:(AGTNote*)value_;
+- (void)removeNotesObject:(AGTNote*)value_;
 
 @end
 
-@interface _JBPhoto (CoreDataGeneratedPrimitiveAccessors)
+@interface _AGTPhoto (CoreDataGeneratedPrimitiveAccessors)
 
 - (NSData*)primitivePhotoData;
 - (void)setPrimitivePhotoData:(NSData*)value;

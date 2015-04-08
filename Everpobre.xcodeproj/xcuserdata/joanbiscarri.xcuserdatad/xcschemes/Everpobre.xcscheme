@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B8DA9C7A1AD4795000F13472"
+               BlueprintIdentifier = "EDA835FA1AD479500044C6DB"
                BuildableName = "Everpobre.app"
                BlueprintName = "Everpobre"
                ReferencedContainer = "container:Everpobre.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B8DA9C931AD4795000F13472"
+               BlueprintIdentifier = "EDA836131AD479500044C6DB"
                BuildableName = "EverpobreTests.xctest"
                BlueprintName = "EverpobreTests"
                ReferencedContainer = "container:Everpobre.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B8DA9C931AD4795000F13472"
+               BlueprintIdentifier = "EDA836131AD479500044C6DB"
                BuildableName = "EverpobreTests.xctest"
                BlueprintName = "EverpobreTests"
                ReferencedContainer = "container:Everpobre.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8DA9C7A1AD4795000F13472"
+            BlueprintIdentifier = "EDA835FA1AD479500044C6DB"
             BuildableName = "Everpobre.app"
             BlueprintName = "Everpobre"
             ReferencedContainer = "container:Everpobre.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8DA9C7A1AD4795000F13472"
+            BlueprintIdentifier = "EDA835FA1AD479500044C6DB"
             BuildableName = "Everpobre.app"
             BlueprintName = "Everpobre"
             ReferencedContainer = "container:Everpobre.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8DA9C7A1AD4795000F13472"
+            BlueprintIdentifier = "EDA835FA1AD479500044C6DB"
             BuildableName = "Everpobre.app"
             BlueprintName = "Everpobre"
             ReferencedContainer = "container:Everpobre.xcodeproj">

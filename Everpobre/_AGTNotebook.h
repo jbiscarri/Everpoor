@@ -1,28 +1,29 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to JBNotebook.h instead.
+// Make changes to AGTNotebook.h instead.
 
-#import <CoreData/CoreData.h>
+@import CoreData;
+#import "AGTEverpobreBaseClass.h"
 
-extern const struct JBNotebookAttributes {
+extern const struct AGTNotebookAttributes {
 	__unsafe_unretained NSString *creationDate;
 	__unsafe_unretained NSString *modificationDate;
 	__unsafe_unretained NSString *name;
-} JBNotebookAttributes;
+} AGTNotebookAttributes;
 
-extern const struct JBNotebookRelationships {
+extern const struct AGTNotebookRelationships {
 	__unsafe_unretained NSString *notes;
-} JBNotebookRelationships;
+} AGTNotebookRelationships;
 
-@class JBNote;
+@class AGTNote;
 
-@interface JBNotebookID : NSManagedObjectID {}
+@interface AGTNotebookID : NSManagedObjectID {}
 @end
 
-@interface _JBNotebook : NSManagedObject {}
+@interface _AGTNotebook : AGTEverpobreBaseClass {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-@property (nonatomic, readonly, strong) JBNotebookID* objectID;
+@property (nonatomic, readonly, strong) AGTNotebookID* objectID;
 
 @property (nonatomic, strong) NSDate* creationDate;
 
@@ -42,15 +43,15 @@ extern const struct JBNotebookRelationships {
 
 @end
 
-@interface _JBNotebook (NotesCoreDataGeneratedAccessors)
+@interface _AGTNotebook (NotesCoreDataGeneratedAccessors)
 - (void)addNotes:(NSSet*)value_;
 - (void)removeNotes:(NSSet*)value_;
-- (void)addNotesObject:(JBNote*)value_;
-- (void)removeNotesObject:(JBNote*)value_;
+- (void)addNotesObject:(AGTNote*)value_;
+- (void)removeNotesObject:(AGTNote*)value_;
 
 @end
 
-@interface _JBNotebook (CoreDataGeneratedPrimitiveAccessors)
+@interface _AGTNotebook (CoreDataGeneratedPrimitiveAccessors)
 
 - (NSDate*)primitiveCreationDate;
 - (void)setPrimitiveCreationDate:(NSDate*)value;
