@@ -11,6 +11,7 @@
 #import "AGTNotebook.h"
 #import "AGTNote.h"
 #import "AGTNotebooksViewController.h"
+#import "UIViewController+Navigation.h"
 
 
 @interface AppDelegate ()
@@ -47,10 +48,11 @@
     
     AGTNotebooksViewController *nVC = [[AGTNotebooksViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
     
+    
     self.window = [[UIWindow alloc] initWithFrame:
                    [[UIScreen mainScreen] bounds]];
     
-    self.window.rootViewController = nVC;
+    self.window.rootViewController = [nVC wrappedInNavigation];
     
     [self.window makeKeyAndVisible];
     

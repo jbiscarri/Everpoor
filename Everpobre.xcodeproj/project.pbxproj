@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B8B5F5821AD5D41200266382 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */; };
 		B8B5F5851AD5D51300266382 /* AGTNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5841AD5D51300266382 /* AGTNotebooksViewController.m */; };
+		B8B5F5891AD5DC1D00266382 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5881AD5DC1D00266382 /* UIViewController+Navigation.m */; };
 		EDA2A4B41AD5C260004D87DA /* AGTEverpobreBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA2A4B31AD5C260004D87DA /* AGTEverpobreBaseClass.m */; };
 		EDA836011AD479500044C6DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA836001AD479500044C6DB /* main.m */; };
 		EDA836041AD479500044C6DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA836031AD479500044C6DB /* AppDelegate.m */; };
@@ -40,6 +41,8 @@
 		B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		B8B5F5831AD5D51300266382 /* AGTNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotebooksViewController.h; sourceTree = "<group>"; };
 		B8B5F5841AD5D51300266382 /* AGTNotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNotebooksViewController.m; sourceTree = "<group>"; };
+		B8B5F5871AD5DC1D00266382 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		B8B5F5881AD5DC1D00266382 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
 		EDA2A4B21AD5C260004D87DA /* AGTEverpobreBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEverpobreBaseClass.h; sourceTree = "<group>"; };
 		EDA2A4B31AD5C260004D87DA /* AGTEverpobreBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEverpobreBaseClass.m; sourceTree = "<group>"; };
 		EDA835FB1AD479500044C6DB /* Everpobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everpobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +101,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		B8B5F5861AD5DBE200266382 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5F5871AD5DC1D00266382 /* UIViewController+Navigation.h */,
+				B8B5F5881AD5DC1D00266382 /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		EDA835F21AD479500044C6DB = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		EDA835FD1AD479500044C6DB /* Everpobre */ = {
 			isa = PBXGroup;
 			children = (
+				B8B5F5861AD5DBE200266382 /* Categories */,
 				B8B5F57F1AD5D3D100266382 /* Controllers */,
 				EDA836271AD47AB90044C6DB /* Models */,
 				EDA836021AD479500044C6DB /* AppDelegate.h */,
@@ -293,6 +306,7 @@
 				EDA2A4B41AD5C260004D87DA /* AGTEverpobreBaseClass.m in Sources */,
 				B8B5F5821AD5D41200266382 /* AGTCoreDataTableViewController.m in Sources */,
 				B8B5F5851AD5D51300266382 /* AGTNotebooksViewController.m in Sources */,
+				B8B5F5891AD5DC1D00266382 /* UIViewController+Navigation.m in Sources */,
 				EDA8364D1AD490F00044C6DB /* AGTNotebook.m in Sources */,
 				EDA836491AD490F00044C6DB /* _AGTNote.m in Sources */,
 				EDA836011AD479500044C6DB /* main.m in Sources */,
