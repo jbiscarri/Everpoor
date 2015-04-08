@@ -10,6 +10,8 @@
 #import "AppDelegate.h"
 #import "AGTNotebook.h"
 #import "AGTNote.h"
+#import "AGTNotebooksViewController.h"
+
 
 @interface AppDelegate ()
 @property (nonatomic, strong) AGTCoreDataStack *stack;
@@ -27,9 +29,28 @@
     // Creamos datos chorras
     [self createDummyData];
     
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[AGTNotebook entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNotebookAttributes.name
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:AGTNotebookAttributes.modificationDate
+                                                          ascending:NO]];
+    req.fetchBatchSize = 20;
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                         managedObjectContext:self.stack.context sectionNameKeyPath:nil
+                                                                                    cacheName:nil];
+    
+    
+    
+    
+    
+    AGTNotebooksViewController *nVC = [[AGTNotebooksViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
     
     self.window = [[UIWindow alloc] initWithFrame:
                    [[UIScreen mainScreen] bounds]];
+    
+    self.window.rootViewController = nVC;
     
     [self.window makeKeyAndVisible];
     
@@ -79,7 +100,7 @@
     AGTNote *n5 = [AGTNote noteWithName:@"Nota5"
                  notebook:exs
                   context:self.stack.context];
-    
+    /*
     NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[AGTNote entityName]];
     req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.name
                                                           ascending:YES
@@ -98,7 +119,7 @@
         NSLog(@"Error al guardar %@", error);
 
     }];
-    
+    */
 }
 
 
