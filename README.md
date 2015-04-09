@@ -1,4 +1,3 @@
-
 ## Everpoor 
 
 ### A simple demo app
