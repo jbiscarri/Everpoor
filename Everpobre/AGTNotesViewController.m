@@ -10,6 +10,7 @@
 #import "AGTNote.h"
 #import "AGTPhoto.h"
 #import "AGTNotebook.h"
+#import "AGTNoteViewController.h"
 
 @interface AGTNotesViewController ()
 @property (nonatomic, strong) AGTNotebook *notebook;
@@ -62,6 +63,13 @@
         AGTNote *n = [self.fetchedResultsController objectAtIndexPath:indexPath];
         [self.fetchedResultsController.managedObjectContext deleteObject:n];
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AGTNote *n = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    AGTNoteViewController *nVC = [[AGTNoteViewController alloc] initWithModel:n];
+    [self.navigationController pushViewController:nVC animated:YES];
 }
 
 #pragma mark - Utils
