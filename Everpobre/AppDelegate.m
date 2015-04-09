@@ -12,6 +12,7 @@
 #import "AGTNote.h"
 #import "AGTNotebooksViewController.h"
 #import "UIViewController+Navigation.h"
+#import "Settings.h"
 
 
 @interface AppDelegate ()
@@ -94,13 +95,16 @@
 {
     NSLog(@"Autosave");
 
-    [self.stack saveWithErrorBlock:^(NSError *error) {
-        NSLog(@"Error al guardar (automáticamente): %@", error);
-    }];
-    
-    [self performSelector:@selector(autoSave)
-               withObject:nil
-               afterDelay:10];
+    if (AUTO_SAVE)
+    {
+        [self.stack saveWithErrorBlock:^(NSError *error) {
+            NSLog(@"Error al guardar (automáticamente): %@", error);
+        }];
+        
+        [self performSelector:@selector(autoSave)
+                   withObject:nil
+                   afterDelay:AUTO_SAVE_DELAY];
+    }
 }
 
 /*

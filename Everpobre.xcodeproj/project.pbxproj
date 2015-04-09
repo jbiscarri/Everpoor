@@ -40,6 +40,7 @@
 /* Begin PBXFileReference section */
 		B80B8BF81AD70B6800C7923A /* AGTNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotesViewController.h; sourceTree = "<group>"; };
 		B80B8BF91AD70B6800C7923A /* AGTNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNotesViewController.m; sourceTree = "<group>"; };
+		B80B8BFB1AD7246500C7923A /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		B8B5F5801AD5D41200266382 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		B8B5F5831AD5D51300266382 /* AGTNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotebooksViewController.h; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				EDA8360B1AD479500044C6DB /* Images.xcassets */,
 				EDA8360D1AD479500044C6DB /* LaunchScreen.xib */,
 				EDA835FE1AD479500044C6DB /* Supporting Files */,
+				B80B8BFB1AD7246500C7923A /* Settings.h */,
 			);
 			path = Everpobre;
 			sourceTree = "<group>";
