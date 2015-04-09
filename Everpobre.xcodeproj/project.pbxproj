@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80B8BFA1AD70B6800C7923A /* AGTNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80B8BF91AD70B6800C7923A /* AGTNotesViewController.m */; };
 		B8B5F5821AD5D41200266382 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */; };
 		B8B5F5851AD5D51300266382 /* AGTNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5841AD5D51300266382 /* AGTNotebooksViewController.m */; };
 		B8B5F5891AD5DC1D00266382 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5881AD5DC1D00266382 /* UIViewController+Navigation.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B80B8BF81AD70B6800C7923A /* AGTNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotesViewController.h; sourceTree = "<group>"; };
+		B80B8BF91AD70B6800C7923A /* AGTNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNotesViewController.m; sourceTree = "<group>"; };
 		B8B5F5801AD5D41200266382 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		B8B5F5831AD5D51300266382 /* AGTNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotebooksViewController.h; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */,
 				B8B5F5831AD5D51300266382 /* AGTNotebooksViewController.h */,
 				B8B5F5841AD5D51300266382 /* AGTNotebooksViewController.m */,
+				B80B8BF81AD70B6800C7923A /* AGTNotesViewController.h */,
+				B80B8BF91AD70B6800C7923A /* AGTNotesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				EDA836041AD479500044C6DB /* AppDelegate.m in Sources */,
 				EDA2A4B41AD5C260004D87DA /* AGTEverpobreBaseClass.m in Sources */,
 				B8B5F5821AD5D41200266382 /* AGTCoreDataTableViewController.m in Sources */,
+				B80B8BFA1AD70B6800C7923A /* AGTNotesViewController.m in Sources */,
 				B8B5F5851AD5D51300266382 /* AGTNotebooksViewController.m in Sources */,
 				B8B5F5891AD5DC1D00266382 /* UIViewController+Navigation.m in Sources */,
 				EDA8364D1AD490F00044C6DB /* AGTNotebook.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "AGTNotebooksViewController.h"
 #import "AGTNotebook.h"
+#import "AGTNotesViewController.h"
+#import "AGTNote.h"
 
 @interface AGTNotebooksViewController ()
 
@@ -55,7 +57,34 @@
 
 #pragma mark - UITableViewDelegate
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AGTNotebook *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[AGTNote entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.name
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:AGTNotebookAttributes.modificationDate
+                                                          ascending:NO]];
+    req.fetchBatchSize = 20;
+    req.predicate = [NSPredicate predicateWithFormat:@"notebook = %@", nb];
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                         managedObjectContext:nb.managedObjectContext
+                                                                           sectionNameKeyPath:nil
+                                                                                    cacheName:nil];
+    
+    
+    AGTNotesViewController * nVC = [[AGTNotesViewController alloc] initWithFetchedResultsController:fc
+                                                                                              style:UITableViewStylePlain
+                                                                                           notebook:nb];
+    [self.navigationController pushViewController:nVC animated:YES];
+
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return YES;
 }
 

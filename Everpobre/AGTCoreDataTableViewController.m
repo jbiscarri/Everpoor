@@ -47,7 +47,7 @@
     } else {
         if (self.debug) NSLog(@"[%@ %@] no NSFetchedResultsController (yet?)", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
     }
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
 }
 
 - (void)setFetchedResultsController:(NSFetchedResultsController *)newfrc
