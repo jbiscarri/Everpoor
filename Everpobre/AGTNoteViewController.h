@@ -15,6 +15,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextView *text;
 @property (strong, nonatomic) AGTNote *model;
+@property (weak, nonatomic) IBOutlet UIButton *viewPhotoButton;
+
+@property (assign, nonatomic) CGFloat textViewFrame;
+
 
 - (id)initWithModel:(AGTNote*)note;
 - (IBAction)displayPhoto:(id)sender;

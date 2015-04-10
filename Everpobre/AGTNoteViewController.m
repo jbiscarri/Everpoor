@@ -7,6 +7,7 @@
 //
 
 #import "AGTNoteViewController.h"
+#import "PhotoViewController.h"
 #import "AGTNote.h"
 
 @interface AGTNoteViewController ()
@@ -36,6 +37,7 @@
     self.text.text = self.model.text;
     
     [self setupKeyboardNotifications];
+    self.textViewFrame = self.text.frame.size.height;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -49,6 +51,8 @@
 #pragma mark - Actions
 
 - (IBAction)displayPhoto:(id)sender {
+    PhotoViewController *pVC = [[PhotoViewController alloc] initWithModel:self.model.photo];
+    [self.navigationController pushViewController:pVC animated:YES];
 }
 
 - (IBAction)hideKeyboard:(id)sender {
@@ -81,12 +85,23 @@
 
 - (void)notifyThatKeyboardWillAppear:(NSNotification*)notification
 {
-
+    double duration = [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    NSValue *wrappedFrame = [notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGRect kbdFrame = [wrappedFrame CGRectValue];
+    CGRect currentFrame = self.text.frame;
+    CGRect newRect = CGRectMake(currentFrame.origin.x, currentFrame.origin.y, currentFrame.size.width, currentFrame.size.height - kbdFrame.size.height + self.viewPhotoButton.frame.size.height - 10);
+    [UIView animateWithDuration:duration animations:^{
+        self.text.frame = newRect;
+    }];
 }
 
 - (void)notifyThatKeyboardWillDisappear:(NSNotification*)notification
 {
-    
+    double duration = [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [UIView animateWithDuration:duration animations:^{
+        self.text.frame = CGRectMake(8, 148, self.text.frame.size.width, self.textViewFrame);
+    }];
+
 }
 
 

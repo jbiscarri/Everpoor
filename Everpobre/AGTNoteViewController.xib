@@ -11,6 +11,7 @@
                 <outlet property="name" destination="SCd-AP-58E" id="5eN-wC-yTU"/>
                 <outlet property="text" destination="rM2-wa-46P" id="JGh-6a-c7z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPhotoButton" destination="Iqd-P9-eaT" id="kHJ-WO-5XQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -52,7 +53,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iqd-P9-eaT">
-                    <rect key="frame" x="8" y="538" width="78" height="30"/>
+                    <rect key="frame" x="8" y="537" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <state key="normal" title="View Photo">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

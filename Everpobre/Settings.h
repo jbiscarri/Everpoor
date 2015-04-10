@@ -6,5 +6,5 @@
 //  Copyright (c) 2015 Agbo. All rights reserved.
 //
 
-#define AUTO_SAVE NO
+#define AUTO_SAVE YES
 #define AUTO_SAVE_DELAY 15

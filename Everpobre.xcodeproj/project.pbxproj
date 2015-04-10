@@ -10,6 +10,8 @@
 		B80B8BFA1AD70B6800C7923A /* AGTNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80B8BF91AD70B6800C7923A /* AGTNotesViewController.m */; };
 		B80B8BFF1AD726D700C7923A /* AGTNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80B8BFD1AD726D700C7923A /* AGTNoteViewController.m */; };
 		B80B8C001AD726D700C7923A /* AGTNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80B8BFE1AD726D700C7923A /* AGTNoteViewController.xib */; };
+		B8545E5C1AD85A0E000AB31A /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8545E5A1AD85A0E000AB31A /* PhotoViewController.m */; };
+		B8545E5D1AD85A0E000AB31A /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8545E5B1AD85A0E000AB31A /* PhotoViewController.xib */; };
 		B8B5F5821AD5D41200266382 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */; };
 		B8B5F5851AD5D51300266382 /* AGTNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5841AD5D51300266382 /* AGTNotebooksViewController.m */; };
 		B8B5F5891AD5DC1D00266382 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5881AD5DC1D00266382 /* UIViewController+Navigation.m */; };
@@ -46,6 +48,9 @@
 		B80B8BFC1AD726D700C7923A /* AGTNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNoteViewController.h; sourceTree = "<group>"; };
 		B80B8BFD1AD726D700C7923A /* AGTNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNoteViewController.m; sourceTree = "<group>"; };
 		B80B8BFE1AD726D700C7923A /* AGTNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTNoteViewController.xib; sourceTree = "<group>"; };
+		B8545E591AD85A0E000AB31A /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		B8545E5A1AD85A0E000AB31A /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		B8545E5B1AD85A0E000AB31A /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 		B8B5F5801AD5D41200266382 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		B8B5F5811AD5D41200266382 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		B8B5F5831AD5D51300266382 /* AGTNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotebooksViewController.h; sourceTree = "<group>"; };
@@ -111,6 +116,9 @@
 				B80B8BFC1AD726D700C7923A /* AGTNoteViewController.h */,
 				B80B8BFD1AD726D700C7923A /* AGTNoteViewController.m */,
 				B80B8BFE1AD726D700C7923A /* AGTNoteViewController.xib */,
+				B8545E591AD85A0E000AB31A /* PhotoViewController.h */,
+				B8545E5A1AD85A0E000AB31A /* PhotoViewController.m */,
+				B8545E5B1AD85A0E000AB31A /* PhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA8360F1AD479500044C6DB /* LaunchScreen.xib in Resources */,
+				B8545E5D1AD85A0E000AB31A /* PhotoViewController.xib in Resources */,
 				EDA8360C1AD479500044C6DB /* Images.xcassets in Resources */,
 				B80B8C001AD726D700C7923A /* AGTNoteViewController.xib in Resources */,
 			);
@@ -327,6 +336,7 @@
 				B8B5F5891AD5DC1D00266382 /* UIViewController+Navigation.m in Sources */,
 				EDA8364D1AD490F00044C6DB /* AGTNotebook.m in Sources */,
 				EDA836491AD490F00044C6DB /* _AGTNote.m in Sources */,
+				B8545E5C1AD85A0E000AB31A /* PhotoViewController.m in Sources */,
 				EDA836011AD479500044C6DB /* main.m in Sources */,
 				EDA8364A1AD490F00044C6DB /* _AGTNotebook.m in Sources */,
 				EDA8364E1AD490F00044C6DB /* AGTPhoto.m in Sources */,
