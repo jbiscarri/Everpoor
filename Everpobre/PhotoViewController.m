@@ -25,6 +25,8 @@
 {
     [super viewWillAppear:animated];
     self.photoView.image = self.model.image;
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -53,6 +55,8 @@
     }
     picker.delegate = self;
     
+    picker.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
     [self presentViewController:picker
                        animated:YES
                      completion:^{ }];
@@ -60,9 +64,37 @@
 }
 
 - (IBAction)applyFilter:(id)sender {
+    CIContext *ctxt = [CIContext contextWithOptions:nil];
+    CIImage *inputImg = [CIImage imageWithCGImage:self.model.image.CGImage];
+    CIFilter *vintage = [CIFilter filterWithName:@"CIFalseColor"];
+    [vintage setValue:inputImg forKey:@"inputImage"];
+    CIImage *outputImg = vintage.outputImage;
+    
+    CGImageRef out = nil;
+    out = [ctxt createCGImage:outputImg fromRect:outputImg.extent];
+           
+    self.model.image = [UIImage imageWithCGImage:out];
+    CGImageRelease(out);
+    self.photoView.image = self.model.image;
+
+    
 }
 
 - (IBAction)deletePhoto:(id)sender {
+    self.model.image = nil;
+    CGRect oldRect = self.photoView.bounds;
+    [UIView animateWithDuration:.5
+                     animations:^{
+                         self.photoView.alpha = 0;
+                         self.photoView.bounds = CGRectZero;
+                         self.photoView.transform = CGAffineTransformMakeRotation(M_PI);
+                     } completion:^(BOOL finished) {
+                            self.photoView.image = nil;
+                         self.photoView.alpha = 1;
+                         self.photoView.bounds = oldRect;
+                         self.photoView.transform = CGAffineTransformIdentity;
+                     }];
+
 }
 
 #pragma mark -  UIImagePickerControllerDelegate

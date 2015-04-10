@@ -27,7 +27,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.dateStyle = NSDateFormatterShortStyle;
     self.creationDate.text = [dateFormatter stringFromDate:self.model.creationDate];

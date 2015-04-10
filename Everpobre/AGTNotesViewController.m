@@ -45,10 +45,12 @@
     static NSString *cellID = @"noteCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     cell.textLabel.text = n.name;
     cell.detailTextLabel.text = n.text;
+    cell.imageView.image = n.photo.image;
+
     return cell;
 }
 
